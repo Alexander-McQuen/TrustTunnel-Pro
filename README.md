@@ -25,7 +25,9 @@ Welcome to **TrustTunnel Pro**! This project provides an ultra-fast, secure, and
 To install the server, copy and paste this single command into your server's terminal (run as root or with sudo):
 برای نصب کامل سرور، کافیست دستور زیر را کپی کرده و در ترمینال سرور اوبونتوی خود اجرا کنید:
 
+```bashe
 curl -L -o setup.sh https://raw.githubusercontent.com/Alexander-McQuen/TrustTunnel-Pro/main/setup.sh && sed -i 's/\r$//' setup.sh && chmod +x setup.sh && sudo ./setup.sh
+```
 
 **What this script does (این اسکریپت چه کار می‌کند؟):**
 1. Secures your server and opens necessary ports (22 for SSH, 80, and 443 for VPN/SSL).
@@ -70,4 +72,5 @@ If you want to check your server's live logs and see if clients are connecting s
 sudo journalctl -u trusttunnel -f
 
 ---
+
 *Made with ❤️ for a free and open internet.*
